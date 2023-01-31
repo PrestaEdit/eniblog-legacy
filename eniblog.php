@@ -246,7 +246,6 @@ class EniBlog extends Module implements WidgetInterface
 
     public function hookActionCmsPageFormBuilderModifier(array $params)
     {
-        /** @var FormBuilderInterface $formBuilder */
         $formBuilder = $params['form_builder'];
         $formBuilder->add('your_new_field', SwitchType::class, [
             'label' => $this->getTranslator()->trans('New field', [], 'Modules.EniBlog.Admin'),

@@ -22,7 +22,7 @@ class EniBlogBlogModuleFrontController extends ModuleFrontController
 
         $this->context->controller->registerStylesheet(
             'module-'.$this->module->name.'-styles',
-            'modules/'.$this->module->name.'/views/css/front/styles.css',
+            'modules/'.$this->module->name.'/views/css/front/styles.css'
         );
     }
 }
